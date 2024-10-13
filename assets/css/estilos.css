@@ -1,0 +1,453 @@
+/*ESTILOS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    .roboto-thin {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      
+      .roboto-light {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .roboto-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+      .roboto-thin-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+      }
+      
+      .roboto-light-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+      
+      .roboto-regular-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .roboto-medium-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+      
+      .roboto-bold-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+      
+      .roboto-black-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+}
+
+body{
+    background-image: url(../imagenes/img4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    color: #46A2FD;
+}
+
+/*Formularios*/
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    /*La transicion va despues del codigo JS*/
+   transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #46A2FD;
+}
+
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 14px;
+    outline: none;
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+/*responder a la ventana de ancha*/
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
+/* ESTILOS MENU PRINCIPAL */
+.fondo-contenedor {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a8c0ff, #3f3f3f); /* Gradiente de azul pastel a gris oscuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+.container {
+    text-align: center;
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    padding: 40px;
+    border-radius: 20px; /* Bordes más redondeados para un efecto moderno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+    max-width: 800px; /* Ancho máximo para limitar el tamaño del contenedor */
+    margin: 20px; /* Margen alrededor del contenedor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.container:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el ratón */
+}
+h1 {
+    color: #3f3f3f; /* Color de texto oscuro para contraste */
+    font-size: 2.5rem; /* Tamaño de fuente más grande */
+    margin-bottom: 20px;
+}
+
+p {
+    color: #ffffff; /* Color de texto gris oscuro para legibilidad */
+    font-size: 1.2rem; /* Tamaño de fuente mayor */
+    margin: 10px 0;
+}
+/*botones Menu*/
+
+.button-menu {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4a90e2; /* Color azul brillante */
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button-menu:hover {
+    background-color: #357abd; /* Color azul más oscuro al pasar el ratón */
+}
+.logout-button {
+    background-color: #e94e77; /* Color rojo para el botón de cerrar sesión */
+    margin-top: 20px;
+}
+
+.logout-button:hover {
+    background-color: #c43c55; /* Rojo más oscuro al pasar el ratón */
+}
+.buttons {
+    margin-bottom: 20px;
+}
+/*hasta aqui botones*/
+
+/*ESTILOS CONTACTOS*/
+.form-container, .contacts-container {
+    display: none; /* Ocultas inicialmente, se mostrarán al hacer clic */
+    padding: 20px;
+    border-top: 2px solid #3f3f3f;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.form-container.active, .contacts-container.active {
+    display: block; /* Muestra la sección activa */
+}
+.input-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+.submit-button {
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #357abd;
+}
+.contact-image {
+    width: 100%;
+    max-width: 150px; /* Tamaño máximo de la imagen para que no sea muy grande */
+    border-radius: 50%; /* Hace la imagen circular */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la imagen */
+    transition: transform 0.3s ease;
+}
+
+.contact-image:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #4A90E2;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.contact-info {
+    flex-grow: 1;
+}
+
+.contact-name {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-phone {
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-edit, .contact-delete {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact-delete {
+    background-color: #dc3545;
+}
+
+.contact-edit:hover, .contact-delete:hover {
+    opacity: 0.8;
+}
+
+#add-contact-btn {
+    transition: opacity 0.3s ease;
+}
+
+
+/*Hasta aquí estilos de Contactos*/
+
+/* estilos chat */
+
+.bg-chat-container{
+    background-color: rgba(0, 128, 255, 0.5);
+}
+
+
+
+/* termina estilos de chat */
+
+
+
